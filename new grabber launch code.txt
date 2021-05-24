@@ -1,0 +1,5 @@
+source devel/setup.sh
+roslaunch baxter_gazebo baxter_world.launch
+roslaunch exmpl_models add_table_and_coke.launch
+roslaunch baxter_launch_files baxter_object_grabber_nodes.launch
+rosrun object_grabber example_object_grabber_action_client
